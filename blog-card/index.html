@@ -26,7 +26,7 @@
   <body class="bg-[linear-gradient(143deg,#F9FAFB_0%,#D2D6DB_100%)]">
     <!-- Add your site or application content here -->
     <div
-      class="absolute left-1/2 top-[120px] translate-x-[-50%] w-[340px] rounded-lg overflow-hidden bg-white"
+      class="absolute left-1/2 top-[120px] translate-x-[-50%] w-[340px] rounded-lg overflow-hidden bg-white shadow-[0px_1px_2px_0px_rgba(0,0,0,0.06)] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.10)]"
     >
       <img
         src="./img/spacejoy-YqFz7UMm8qE-unsplash.jpg"
@@ -36,22 +36,37 @@
       <div class="flex flex-col gap-3 px-4 py-6">
         <div class="flex flex-col gap-2">
           <div
-            class="text-[#15803D] font-sm font-normal rounded-full border border-[#BBF7D0] bg-[#F0FDF4] px-[7px] py-[1px] w-fit"
+            class="text-[#15803D] font-sm font-normal leading-5 rounded-full border border-[#BBF7D0] bg-[#F0FDF4] px-[7px] py-[1px] w-fit"
           >
             Interior
           </div>
-          <div class="text-lg font-semibold text-[#171717]">
-            Top 5 Living Room Inspirations
-          </div>
-        </div>
-        <div class="flex flex-col gap-6">
-          <p class="text-[#525252] font-medium">
-            Curated vibrants colors for your living, make it pop & calm in the
-            same time.
-          </p>
-          <div class="flex text-[#4338CA] font-medium gap-1.5">
-            <span>Read more</span>
-            <img src="./img/arrow-right-line.svg" />
+          <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-3">
+              <div class="text-lg font-semibold text-[#171717]">
+                Top 5 Living Room Inspirations
+              </div>
+              <p class="text-[#525252] font-medium">
+                Curated vibrants colors for your living, make it pop & calm in
+                the same time.
+              </p>
+            </div>
+            <button
+              class="flex items-center gap-1.5 min-w-[114px] w-fit rounded font-medium text-[#4338CA] hover:text-[#3730a3] focus:text-[#3730a3] focus:shadow-[0px_0px_0px_1px_#444ce7,0px_0px_0px_4px_rgba(68,76,231,0.12)] disabled:prevent-none disabled:text-[#a3a3a3]"
+            >
+              <span class="flex-1 inline-flex px-0.5">Read more</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
