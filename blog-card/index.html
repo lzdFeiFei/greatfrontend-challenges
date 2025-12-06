@@ -23,27 +23,36 @@
       /* You may write styles inside this <style> tag or within `css/style.css`. */
     </style>
   </head>
-  <body>
+  <body class="bg-[linear-gradient(143deg,#F9FAFB_0%,#D2D6DB_100%)]">
     <!-- Add your site or application content here -->
     <div
-      class="absolute left-1/2 top-[120px] translate-x-[-50%] w-[340px] rounded-lg overflow-hidden"
+      class="absolute left-1/2 top-[120px] translate-x-[-50%] w-[340px] rounded-lg overflow-hidden bg-white"
     >
       <img
         src="./img/spacejoy-YqFz7UMm8qE-unsplash.jpg"
         alt="Living Room Inspirations"
         class="w-full h-[288px]"
       />
-      <div>
-        <div>
-          <div>Interior</div>
-          <div>Top 5 Living Room Inspirations</div>
+      <div class="flex flex-col gap-3 px-4 py-6">
+        <div class="flex flex-col gap-2">
+          <div
+            class="text-[#15803D] font-sm font-normal rounded-full border border-[#BBF7D0] bg-[#F0FDF4] px-[7px] py-[1px] w-fit"
+          >
+            Interior
+          </div>
+          <div class="text-lg font-semibold text-[#171717]">
+            Top 5 Living Room Inspirations
+          </div>
         </div>
-        <div>
-          <p>
+        <div class="flex flex-col gap-6">
+          <p class="text-[#525252] font-medium">
             Curated vibrants colors for your living, make it pop & calm in the
             same time.
           </p>
-          <div>Read more <span>→</span></div>
+          <div class="flex text-[#4338CA] font-medium gap-1.5">
+            <span>Read more</span>
+            <img src="./img/arrow-right-line.svg" />
+          </div>
         </div>
       </div>
     </div>
