@@ -1,4 +1,3 @@
-import React from "react";
 import { cn } from "../../lib/utils";
 import {
   RiYoutubeLine,
@@ -73,10 +72,26 @@ const footerSocials = [
 ];
 const Footer = () => {
   return (
-    <footer className="mx-auto flex max-w-[1216px] flex-col gap-16 py-16 text-black">
-      {/* <div className="flex flex-col flex-1 w-full p-24 g-16"> */}
-      <div className="grid grid-cols-12 gap-x-4 gap-y-16">
-        <div className="col-span-8 flex flex-col gap-2">
+    <footer
+      className={cn(
+        "mx-auto flex w-full max-w-[1216px] flex-col px-4",
+        "gap-12 py-12",
+        "md:py-16",
+        "lg:py-24"
+      )}
+    >
+      <div
+        className={cn(
+          "grid grid-cols-4 gap-x-4 gap-y-12",
+          "md:grid-cols-6 md:gap-x-8 md:gap-y-16",
+          "lg:grid-cols-12"
+        )}
+      >
+        <div
+          className={cn(
+            "col-span-4 flex flex-col gap-2 md:col-span-6 lg:col-span-8"
+          )}
+        >
           <div className="text-xl font-semibold text-neutral-900">
             Join our newsletter
           </div>
@@ -84,10 +99,16 @@ const Footer = () => {
             We’ll send you a nice letter once per week. No spam.
           </div>
         </div>
-        <div className="col-span-4">
+        <div className={cn("col-span-4", "md:col-span-6", "lg:col-span-4")}>
           <Newsletter></Newsletter>
         </div>
-        <div className="col-span-4 flex flex-col items-start gap-8">
+        <div
+          className={cn(
+            "col-span-4 flex flex-col items-start gap-6",
+            "md:col-span-3 md:gap-8",
+            "lg:col-span-4"
+          )}
+        >
           <img
             src={abstractlyLogo}
             alt="Stylenest's Logo"
@@ -97,7 +118,16 @@ const Footer = () => {
             Craft stunning style journeys that weave more joy into every thread.
           </div>
         </div>
-        <div className="col-span-3 col-start-7 flex flex-col gap-4">
+
+        <div className="col-span-3 hidden md:block lg:hidden" />
+
+        <div
+          className={cn(
+            "col-span-4 flex flex-col gap-4",
+            "md:col-span-3",
+            "lg:col-start-7"
+          )}
+        >
           <div className="text-sm text-neutral-500">SHOP CATEGORIES</div>
           <div className="flex flex-col gap-3">
             {shopCategories.map((category) => (
@@ -109,7 +139,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="col-span-3 flex flex-col gap-4">
+        <div className={cn("col-span-4 flex flex-col gap-4", "md:col-span-3")}>
           <div className="text-sm text-neutral-500">SHOP COLLECTIONS</div>
           <div className="flex flex-col gap-3">
             {shopCollections.map((collection) => (
@@ -122,7 +152,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-1 items-center justify-between border-t border-neutral-200 pt-8">
+      <div
+        className={cn(
+          "flex flex-1 flex-col gap-8 border-t border-neutral-200 pt-8",
+          "md:flex-row",
+          "lg: justify-between"
+        )}
+      >
         <div className="text-neutral-500">
           &copy; {new Date().getFullYear()} StyleNest, Inc. All rights reserved.
         </div>
