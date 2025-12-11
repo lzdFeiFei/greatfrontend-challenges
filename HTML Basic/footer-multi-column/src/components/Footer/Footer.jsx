@@ -8,6 +8,7 @@ import {
   RiTwitterXLine,
 } from "react-icons/ri";
 import abstractlyLogo from "../../assets/abstractly-logo.png";
+import Newsletter from "./NewsletterForm";
 
 const shopCategories = [
   {
@@ -84,8 +85,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-span-4">
-          <input type="text" />
-          <button>Subscribe</button>
+          <Newsletter></Newsletter>
         </div>
         <div className="col-span-4 flex flex-col items-start gap-8">
           <img
